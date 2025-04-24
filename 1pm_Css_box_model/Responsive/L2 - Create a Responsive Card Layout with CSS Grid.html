@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2 - Create a Responsive Card Layout with CSS Grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #cards{
+            background-color: black;
+            height: auto;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: auto;
+            margin: auto;
+            display: grid;
+        }
+        #cards>div {
+            
+            background-color: aqua;
+            height: 10vh;
+            width: 20vw;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        @media (max-width:1024px){
+            #cards{
+                height: auto;
+                width: auto;
+                padding: 15px;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width:767px){
+            #cards{
+                height: auto;
+                width: auto;
+                padding: 15px;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center><h1>L2 - Create a Responsive Card Layout with CSS Grid</h1></center>
+    <main>
+        <div id="cards">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </main>
+</body>
+</html>
