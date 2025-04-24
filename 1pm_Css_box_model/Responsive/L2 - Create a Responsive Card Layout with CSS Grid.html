@@ -9,23 +9,23 @@
             box-sizing: border-box;
         }
         #cards{
-            background-color: black;
+            background-color: rgb(212, 208, 208);
             height: auto;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            gap: 80px;
             width: auto;
             margin: auto;
             display: grid;
         }
         #cards>div {
-            
-            background-color: aqua;
-            height: 10vh;
-            width: 20vw;
             margin: 10px;
             text-align: center;
             font-weight: bold;
         }
+         img{
+            width: 100%;
+            height: 100%;
+         }
         @media (max-width:1024px){
             #cards{
                 height: auto;
@@ -48,14 +48,38 @@
     <center><h1>L2 - Create a Responsive Card Layout with CSS Grid</h1></center>
     <main>
         <div id="cards">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
+            <div>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.0u6reuoZ9vcQimOtIYHbWAHaE8&pid=Api&P=0&h=180" />
+                <p>Nature view is always beautiful</p>
+            </div>
+            <div>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.wZaZMWgomhpq8fMbkcS_AAHaEo&pid=Api&P=0&h=180" />
+                <p>Nature looks wonderfull</p>
+            </div>
+            <div>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.QAUQZB7HvQo4LAsrwTkcegHaEK&pid=Api&P=0&h=180" />
+                <p>Nature gives colorful view</p>
+            </div>
+            <div>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.ThDaZOaEObct1hhJzQCSEwHaEK&pid=Api&P=0&h=180" />
+                <p>Nature gives us food</p>
+            </div>
+            <div>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.0u6reuoZ9vcQimOtIYHbWAHaE8&pid=Api&P=0&h=180" alt="nature1" />
+                <p>Nature view is always beautiful</p>
+            </div>
+            <div>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.wZaZMWgomhpq8fMbkcS_AAHaEo&pid=Api&P=0&h=180" />
+                <p>Nature looks wonderfull</p>
+            </div>
+            <div>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.QAUQZB7HvQo4LAsrwTkcegHaEK&pid=Api&P=0&h=180" />
+                <p>Nature gives colorful view</p>
+            </div>
+            <div>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.ThDaZOaEObct1hhJzQCSEwHaEK&pid=Api&P=0&h=180" />
+                <p>Nature gives us food</p>
+            </div>
         </div>
     </main>
 </body>

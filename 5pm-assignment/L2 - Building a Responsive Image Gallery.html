@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2 - Building a Responsive Image Gallery</title>
+    <style>
+        .container{
+            background-color: rgb(0, 0, 0);
+            height: 100vh;
+            width: 80vw;
+            margin: auto;
+            position: relative;
+            padding-top: 20px;
+        }
+        .container>div:first-child{
+            height: auto;
+            width: 40vw;
+            background-color: rgb(255, 255, 255,0.5);
+        }
+        .container>div:nth-of-type(2){
+            height: auto;
+            width: 31vw;
+            background-color: rgb(255, 255, 255,0.5);
+            padding: 10px;
+            border-radius: 7px;
+            margin-left: 700px;
+            margin-top:-280px
+        }
+        .container>div:nth-of-type(3){
+            height: auto;
+            width: 40vw;
+            background-color: rgb(255, 255, 255,0.5);
+            margin-top: -275px;
+            margin-left: 50px;
+            border-radius: 10px;
+        }
+        .container>div:nth-of-type(4){
+            height: auto;
+            width: 40vw;
+            margin-top: -425px;
+            margin-left: 50px;
+            border-radius: 10px;
+        }
+        .block1>div img{
+            height: 15vh;
+            width: 10vw;
+            margin: 10px;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+        .block3>div img{
+            height: 15vh;
+            width: 10vw;
+            margin: 10px;
+            margin-left: 30px;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+        .block1, .block3{
+            display: grid;
+            margin-left: 50px;
+            margin-top: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            border-radius: 10px;
+        }
+        .middle{
+            display: flex;
+        }
+        .middle>div img{
+            height: 15vh;
+            width: 10vw;
+            margin: 20px;
+            margin-left: 30px;
+            border-radius: 50%;
+        }
+        .block2>div img{
+            height: 20vh;
+            width: 30vw;
+            border-radius:3%;
+            margin: 10px;
+            border: 2px solid black;
+        }
+      
+    </style>
+</head>
+<body>
+    <center><h1>L2 - Building a Responsive Image Gallery</h1></center>
+    <main>
+        <div class="container">
+            <div class="block1">
+                <div>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.fV10YiNAfrPx6bEuXKZpowHaEo&pid=Api&P=0&h=180" />
+                </div>
+                <div>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.NGu9EjVO8jdyJwZKONH59QAAAA&pid=Api&P=0&h=180" />
+                </div>
+                <div>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.yMAe7fSpK-v38yqUKK7lJQHaES&pid=Api&P=0&h=180" />
+                </div>
+                <div>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.x1WEUXVJzQqG29hJU30JpQHaEo&pid=Api&P=0&h=180" />
+                </div>
+                <div>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.HxYI5KZo51OR0c9dlblAqgHaEo&pid=Api&P=0&h=180" />
+                </div>
+                <div>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.Cea4Fk61C49XjlJfYgvhxQHaE7&pid=Api&P=0&h=180" />
+                </div>
+            </div>
+            <div class="block2">
+                <div>
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.y6MXl1TwB-x2bZFfTsh7MAHaEK&pid=Api&P=0&h=180" />
+                </div>
+                <div>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.d_08xbhmiE3jTiHouFvcRwHaEo&pid=Api&P=0&h=180" />
+                </div>
+                <div>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.PL7QLsBP1skJ5lm6xDl0GwHaEm&pid=Api&P=0&h=180" /></div>
+                <div>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.tPnui-PVgVZaImLwWVOM6wHaEK&pid=Api&P=0&h=180" /></div>
+            </div>
+            <div class="block3">
+                <div>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.aSMukwrEsjGt9XxJFvxdxQHaEo&pid=Api&P=0&h=180" /></div>
+                <div>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.84GwnVlIEu9-Ozr_ElPQQQHaEo&pid=Api&P=0&h=180" /></div>
+                <div>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.3coo_N8sieled8QNroQmkgHaHa&pid=Api&P=0&h=180" /></div>
+                <div>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.qHt68xFUz00r9zSzJsZEjgHaF7&pid=Api&P=0&h=180" /></div>
+                <div>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.FQgDNJlvPfq3zsxQ66zdtQHaEo&pid=Api&P=0&h=180" /></div>
+                <div>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.7qeEY9Xlu7r1UEmFuT9w9AHaFj&pid=Api&P=0&h=180" /></div>
+            </div>
+            <div class="middle">
+                <div>
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.e7i7kpiI3SU50FROr4X0gQHaFj&pid=Api&P=0&h=180" /></div>
+                <div>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.hUyd9MToyEA5jK6X8hKvAwHaFh&pid=Api&P=0&h=180" /></div>
+                <div>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.LJyFqYb5SowfkdFkdu099AHaEo&pid=Api&P=0&h=180" /></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
